@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Ustawiherbs</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">About us</string>
+    <string name="second_fragment_label">Buy</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        About Us
+    </string>
+    <string name="featured_herbs">Featured Herbs</string>
+    <string name="shop_now">Shop Now</string>
+</resources>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo" />
+
+    <!-- Search bar -->
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search for herbs"
+        android:inputType="text" />
+
+    <!-- Featured Herbs -->
+    <TextView
+        android:id="@+id/featured_herbs_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Featured Herbs"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/herb1_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/herb1" />
+
+            <TextView
+                android:id="@+id/herb1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Herb 1" />
+
+            <TextView
+                android:id="@+id/herb1_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brief description of Herb 1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/herb2_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/herb2" />
+
+            <TextView
+                android:id="@+id/herb2_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Herb 2" />
+
+            <TextView
+                android:id="@+id/herb2_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brief description of Herb 2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/herb3_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/herb3" />
+
+            <TextView
+                android:id="@+id/herb3_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Herb 3" />
+
+            <TextView
+                android:id="@+id/herb3_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brief description of Herb 3" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- View All button -->
+    <Button
+        android:id="@+id/view_all_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View All" />
+
+    <!-- Herb details -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/herb_details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Herb 1"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/herb_details_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brief description of Herb 1" />
+
+        <TextView
+            android:id="@+id/herb_details_uses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uses/Benefits" />
+
+        <TextView
+            android:id="@+id/herb_details_dosages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recommended Dosages" />
+
+        <TextView
+            android:id="@+id/herb_details_side_effects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Potential Side Effects" />
+
+        <TextView
+            android:id="@+id/herb_details_interactions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interactions with Medications" />
+
+        <!-- Buy Now button -->
+        <Button
+            android:id="@+id/buy_now_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy Now" />
+
+    </LinearLayout>
+
+</LinearLayout>

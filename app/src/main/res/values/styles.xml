@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <!-- Customize the popup overlay theme here. -->
+        <item name="android:background">@color/black</item>
+    </style>
+    <style name="MyPopupMenuStyle" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@color/my_popup_background</item>
+        <item name="android:textColor">@color/my_popup_text_color</item>
+    </style>
+
+    <color name="my_popup_text_color">#3FA748</color>
+    <color name="my_popup_background">#181717</color>
+</resources>
