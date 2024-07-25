@@ -1,11 +1,15 @@
 package com.example.ustawiherbs;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ImageButton;
 import android.widget.PopupMenu;
 import android.widget.Toast;
@@ -14,6 +18,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class HomeActivity extends AppCompatActivity {
+    WebView webView;
+
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,9 +29,23 @@ public class HomeActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar); // Set the Toolbar as the ActionBar
 
-        if (getSupportActionBar() != null) {
+        if (getSupportActionBar()!= null) {
             getSupportActionBar().setTitle(R.string.app_name); // Now you can access the ActionBar
         }
+
+        webView = findViewById(R.id.webView);
+        webView.getSettings().setJavaScriptEnabled(true); // Enable JavaScript
+        webView.getSettings().setDomStorageEnabled(true);
+        webView.getSettings().setDatabaseEnabled(true);
+        webView.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
+        webView.loadUrl("https://mutheejj.github.io/UstawiHebs_landingpage/");
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+                Log.e("WebView", "Error loading webpage: " + description);
+                Toast.makeText(HomeActivity.this, "Error loading webpage: " + description, Toast.LENGTH_SHORT).show();
+            }
+        });
 
         ImageButton imgMenu = findViewById(R.id.imgMenu);
         imgMenu.setOnClickListener(new View.OnClickListener() {

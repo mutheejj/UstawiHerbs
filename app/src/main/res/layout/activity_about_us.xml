@@ -1,10 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutUsActivity">
+    android:fillViewport="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".AboutUsActivity">
+
+        <!-- Header Section -->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="onClickListener"
+            android:text="Back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Image Section -->
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/herb1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button" />
+
+        <!-- About Us Section -->
+        <TextView
+            android:id="@+id/about_us_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:text="Welcome to Ustawi Herbs, your premier online destination for high-quality herbal products. Our mission is to provide our customers with the best possible products and services, while promoting a healthy and sustainable lifestyle.
+
+Our story began with a passion for nature and a desire to share its benefits with others. Our team of experts has carefully curated a selection of herbal products that are not only effective but also sustainable and eco-friendly. We believe that everyone deserves access to high-quality herbal products, which is why we strive to make our products affordable and accessible to all.
+
+At Ustawi Herbs, we're committed to providing our customers with the best possible shopping experience. Our website is designed to be user-friendly and easy to navigate, with clear product descriptions and high-quality product images. We also offer fast and reliable shipping, as well as a 30-day money-back guarantee.
+
+We're proud to be a part of the herbal community and are committed to giving back. We partner with local organizations to support sustainable farming practices and promote environmental conservation. Our goal is to make a positive impact on the world, one herbal product at a time.
+
+Our team is dedicated to providing exceptional customer service and ensuring that every customer has a positive experience with Ustawi Herbs. We're always here to help, whether you have a question about a product or need assistance with an order.
+
+Thank you for choosing Ustawi Herbs. We're honored to have you as a customer and look forward to helping you achieve your health and wellness goals."
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
