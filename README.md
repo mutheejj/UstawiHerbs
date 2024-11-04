@@ -6,7 +6,7 @@ Welcome to the Ustawi Herbs app repository. This app allows users to buy herbs a
 
 You can download the latest version of the Ustawi Herbs app from the link below:
 
-[Download Ustawi Herbs APK](https://github.com/mutheejj/UstawiHerbs/Ustawi.apk)
+[Download Ustawi Herbs APK](https://github.com/mutheejj/UstawiHerbs/raw/refs/heads/main/Ustawi.apk)
 
 ## Features
 
